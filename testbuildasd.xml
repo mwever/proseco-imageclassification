@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="all" name="Create Runnable Jar for Project prototypebasedcomposition with libraries in sub-folder">
+	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
+	<!--ANT 1.7 is required                                        -->
+	<!--define folder properties-->
+	<property name="dir.buildfile" value="." />
+	<property name="dir.workspace" value="${dir.buildfile}/.." />
+	<property name="dir.jarfile" value="${dir.buildfile}/prototypes/imageclassification" />
+	<property name="dir.jarlibs" value="${dir.buildfile}/prototypes/imageclassification/libs" />
+
+	<target name="createGroundingRoutineJar">
+		<jar destfile="${dir.jarfile}/GroundingRoutine.jar">
+			<manifest>
+				<attribute name="Main-Class" value="de.upb.crc901.proseco.prototype.imageclassification.GroundingRoutine" />
+				<attribute name="Class-Path" value=". GroundingRoutine_lib/Catalano.Image.jar GroundingRoutine_lib/Catalano.Math.jar GroundingRoutine_lib/Catalano.Statistics.jar GroundingRoutine_lib/HTNSearch.jar GroundingRoutine_lib/JAICore.jar GroundingRoutine_lib/JASE.jar GroundingRoutine_lib/gs-core-1.1.1.jar GroundingRoutine_lib/junit-4.3.1.jar GroundingRoutine_lib/pherd-1.0.jar GroundingRoutine_lib/mbox2-1.0.jar GroundingRoutine_lib/gs-ui-1.3.jar GroundingRoutine_lib/gs-algo-1.3.jar GroundingRoutine_lib/commons-math-2.1.jar GroundingRoutine_lib/commons-math3-3.4.1.jar GroundingRoutine_lib/jfreechart-1.0.14.jar GroundingRoutine_lib/jcommon-1.0.17.jar GroundingRoutine_lib/xml-apis-1.3.04.jar GroundingRoutine_lib/itext-2.1.5.jar GroundingRoutine_lib/bcmail-jdk14-138.jar GroundingRoutine_lib/bcprov-jdk14-138.jar GroundingRoutine_lib/scala-library-2.10.1.jar GroundingRoutine_lib/weka-dev-3.9.1.jar GroundingRoutine_lib/java-cup-11b-2015.03.26.jar GroundingRoutine_lib/java-cup-11b-runtime-2015.03.26.jar GroundingRoutine_lib/bounce-0.18.jar GroundingRoutine_lib/mtj-1.0.4.jar GroundingRoutine_lib/netlib-native_ref-osx-x86_64-1.1-natives.jar GroundingRoutine_lib/native_ref-java-1.1.jar GroundingRoutine_lib/jniloader-1.1.jar GroundingRoutine_lib/netlib-native_ref-linux-x86_64-1.1-natives.jar GroundingRoutine_lib/netlib-native_ref-linux-i686-1.1-natives.jar GroundingRoutine_lib/netlib-native_ref-win-x86_64-1.1-natives.jar GroundingRoutine_lib/netlib-native_ref-win-i686-1.1-natives.jar GroundingRoutine_lib/netlib-native_ref-linux-armhf-1.1-natives.jar GroundingRoutine_lib/netlib-native_system-osx-x86_64-1.1-natives.jar GroundingRoutine_lib/native_system-java-1.1.jar GroundingRoutine_lib/netlib-native_system-linux-x86_64-1.1-natives.jar GroundingRoutine_lib/netlib-native_system-linux-i686-1.1-natives.jar GroundingRoutine_lib/netlib-native_system-linux-armhf-1.1-natives.jar GroundingRoutine_lib/netlib-native_system-win-x86_64-1.1-natives.jar GroundingRoutine_lib/netlib-native_system-win-i686-1.1-natives.jar GroundingRoutine_lib/arpack_combined_all-0.1.jar GroundingRoutine_lib/netlib-java-1.1.jar GroundingRoutine_lib/core-1.1.jar GroundingRoutine_lib/commons-lang3-3.4.jar GroundingRoutine_lib/commons-collections4-4.1.jar GroundingRoutine_lib/commons-io-2.5.jar GroundingRoutine_lib/commons-fileupload-1.3.3.jar GroundingRoutine_lib/guava-18.0.jar GroundingRoutine_lib/slf4j-log4j12-1.7.13.jar GroundingRoutine_lib/slf4j-api-1.7.13.jar GroundingRoutine_lib/log4j-1.2.17.jar GroundingRoutine_lib/jackson-databind-2.9.0.pr4.jar GroundingRoutine_lib/jackson-annotations-2.9.0.pr4.jar GroundingRoutine_lib/jackson-core-2.9.0.pr4.jar" />
+			</manifest>
+			<fileset dir="${dir.buildfile}/target/classes" />
+		</jar>
+		<copy file="${dir.buildfile}/lib/Catalano.Image.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/Catalano.Math.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/Catalano.Statistics.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/HTNSearch.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/JAICore.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/JASE.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-core/1.1.1/gs-core-1.1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/junit/junit/4.3.1/junit-4.3.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/pherd/1.0/pherd-1.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/mbox2/1.0/mbox2-1.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-ui/1.3/gs-ui-1.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-algo/1.3/gs-algo-1.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/jfree/jcommon/1.0.17/jcommon-1.0.17.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/lowagie/itext/2.1.5/itext-2.1.5.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/weka-dev/3.9.1/weka-dev-3.9.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b/2015.03.26/java-cup-11b-2015.03.26.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b-runtime/2015.03.26/java-cup-11b-runtime-2015.03.26.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/bounce/0.18/bounce-0.18.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/googlecode/matrix-toolkits-java/mtj/1.0.4/mtj-1.0.4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/jniloader/1.1/jniloader-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/googlecode/netlib-java/netlib-java/1.1/netlib-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/core/1.1/core-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/slf4j/slf4j-log4j12/1.7.13/slf4j-log4j12-1.7.13.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.0.pr4/jackson-databind-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0.pr4/jackson-annotations-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.0.pr4/jackson-core-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+	</target>
+
+	<target name="createBenchmarkTaskOfferJar">
+		<jar destfile="${dir.jarfile}/benchmarks/BenchmarkTaskOffer.jar">
+			<manifest>
+				<attribute name="Main-Class" value="de.upb.crc901.proseco.prototype.imageclassification.benchmark.BenchmarkRcv" />
+				<attribute name="Class-Path" value=". BenchmarkTaskOffer_lib/Catalano.Image.jar BenchmarkTaskOffer_lib/Catalano.Math.jar BenchmarkTaskOffer_lib/Catalano.Statistics.jar BenchmarkTaskOffer_lib/HTNSearch.jar BenchmarkTaskOffer_lib/JAICore.jar BenchmarkTaskOffer_lib/JASE.jar BenchmarkTaskOffer_lib/gs-core-1.1.1.jar BenchmarkTaskOffer_lib/junit-4.3.1.jar BenchmarkTaskOffer_lib/pherd-1.0.jar BenchmarkTaskOffer_lib/mbox2-1.0.jar BenchmarkTaskOffer_lib/gs-ui-1.3.jar BenchmarkTaskOffer_lib/gs-algo-1.3.jar BenchmarkTaskOffer_lib/commons-math-2.1.jar BenchmarkTaskOffer_lib/commons-math3-3.4.1.jar BenchmarkTaskOffer_lib/jfreechart-1.0.14.jar BenchmarkTaskOffer_lib/jcommon-1.0.17.jar BenchmarkTaskOffer_lib/xml-apis-1.3.04.jar BenchmarkTaskOffer_lib/itext-2.1.5.jar BenchmarkTaskOffer_lib/bcmail-jdk14-138.jar BenchmarkTaskOffer_lib/bcprov-jdk14-138.jar BenchmarkTaskOffer_lib/scala-library-2.10.1.jar BenchmarkTaskOffer_lib/weka-dev-3.9.1.jar BenchmarkTaskOffer_lib/java-cup-11b-2015.03.26.jar BenchmarkTaskOffer_lib/java-cup-11b-runtime-2015.03.26.jar BenchmarkTaskOffer_lib/bounce-0.18.jar BenchmarkTaskOffer_lib/mtj-1.0.4.jar BenchmarkTaskOffer_lib/netlib-native_ref-osx-x86_64-1.1-natives.jar BenchmarkTaskOffer_lib/native_ref-java-1.1.jar BenchmarkTaskOffer_lib/jniloader-1.1.jar BenchmarkTaskOffer_lib/netlib-native_ref-linux-x86_64-1.1-natives.jar BenchmarkTaskOffer_lib/netlib-native_ref-linux-i686-1.1-natives.jar BenchmarkTaskOffer_lib/netlib-native_ref-win-x86_64-1.1-natives.jar BenchmarkTaskOffer_lib/netlib-native_ref-win-i686-1.1-natives.jar BenchmarkTaskOffer_lib/netlib-native_ref-linux-armhf-1.1-natives.jar BenchmarkTaskOffer_lib/netlib-native_system-osx-x86_64-1.1-natives.jar BenchmarkTaskOffer_lib/native_system-java-1.1.jar BenchmarkTaskOffer_lib/netlib-native_system-linux-x86_64-1.1-natives.jar BenchmarkTaskOffer_lib/netlib-native_system-linux-i686-1.1-natives.jar BenchmarkTaskOffer_lib/netlib-native_system-linux-armhf-1.1-natives.jar BenchmarkTaskOffer_lib/netlib-native_system-win-x86_64-1.1-natives.jar BenchmarkTaskOffer_lib/netlib-native_system-win-i686-1.1-natives.jar BenchmarkTaskOffer_lib/arpack_combined_all-0.1.jar BenchmarkTaskOffer_lib/netlib-java-1.1.jar BenchmarkTaskOffer_lib/core-1.1.jar BenchmarkTaskOffer_lib/commons-lang3-3.4.jar BenchmarkTaskOffer_lib/commons-collections4-4.1.jar BenchmarkTaskOffer_lib/commons-io-2.5.jar BenchmarkTaskOffer_lib/commons-fileupload-1.3.3.jar BenchmarkTaskOffer_lib/guava-18.0.jar BenchmarkTaskOffer_lib/slf4j-log4j12-1.7.13.jar BenchmarkTaskOffer_lib/slf4j-api-1.7.13.jar BenchmarkTaskOffer_lib/log4j-1.2.17.jar BenchmarkTaskOffer_lib/jackson-databind-2.9.0.pr4.jar BenchmarkTaskOffer_lib/jackson-annotations-2.9.0.pr4.jar BenchmarkTaskOffer_lib/jackson-core-2.9.0.pr4.jar" />
+			</manifest>
+			<fileset dir="${dir.buildfile}/target/classes" />
+		</jar>
+		<copy file="${dir.buildfile}/lib/Catalano.Image.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/Catalano.Math.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/Catalano.Statistics.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/HTNSearch.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/JAICore.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/JASE.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-core/1.1.1/gs-core-1.1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/junit/junit/4.3.1/junit-4.3.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/pherd/1.0/pherd-1.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/mbox2/1.0/mbox2-1.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-ui/1.3/gs-ui-1.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-algo/1.3/gs-algo-1.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/jfree/jcommon/1.0.17/jcommon-1.0.17.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/lowagie/itext/2.1.5/itext-2.1.5.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/weka-dev/3.9.1/weka-dev-3.9.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b/2015.03.26/java-cup-11b-2015.03.26.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b-runtime/2015.03.26/java-cup-11b-runtime-2015.03.26.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/bounce/0.18/bounce-0.18.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/googlecode/matrix-toolkits-java/mtj/1.0.4/mtj-1.0.4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/jniloader/1.1/jniloader-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/googlecode/netlib-java/netlib-java/1.1/netlib-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/core/1.1/core-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/slf4j/slf4j-log4j12/1.7.13/slf4j-log4j12-1.7.13.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.0.pr4/jackson-databind-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0.pr4/jackson-annotations-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.0.pr4/jackson-core-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+	</target>
+
+	<target name="createBenchmarkJar">
+		<jar destfile="${dir.jarfile}/benchmarks/Benchmark.jar">
+			<manifest>
+				<attribute name="Main-Class" value="de.upb.crc901.proseco.prototype.imageclassification.benchmark.Benchmark" />
+				<attribute name="Class-Path" value=". Benchmark_lib/Catalano.Image.jar Benchmark_lib/Catalano.Math.jar Benchmark_lib/Catalano.Statistics.jar Benchmark_lib/HTNSearch.jar Benchmark_lib/JAICore.jar Benchmark_lib/JASE.jar Benchmark_lib/gs-core-1.1.1.jar Benchmark_lib/junit-4.3.1.jar Benchmark_lib/pherd-1.0.jar Benchmark_lib/mbox2-1.0.jar Benchmark_lib/gs-ui-1.3.jar Benchmark_lib/gs-algo-1.3.jar Benchmark_lib/commons-math-2.1.jar Benchmark_lib/commons-math3-3.4.1.jar Benchmark_lib/jfreechart-1.0.14.jar Benchmark_lib/jcommon-1.0.17.jar Benchmark_lib/xml-apis-1.3.04.jar Benchmark_lib/itext-2.1.5.jar Benchmark_lib/bcmail-jdk14-138.jar Benchmark_lib/bcprov-jdk14-138.jar Benchmark_lib/scala-library-2.10.1.jar Benchmark_lib/weka-dev-3.9.1.jar Benchmark_lib/java-cup-11b-2015.03.26.jar Benchmark_lib/java-cup-11b-runtime-2015.03.26.jar Benchmark_lib/bounce-0.18.jar Benchmark_lib/mtj-1.0.4.jar Benchmark_lib/netlib-native_ref-osx-x86_64-1.1-natives.jar Benchmark_lib/native_ref-java-1.1.jar Benchmark_lib/jniloader-1.1.jar Benchmark_lib/netlib-native_ref-linux-x86_64-1.1-natives.jar Benchmark_lib/netlib-native_ref-linux-i686-1.1-natives.jar Benchmark_lib/netlib-native_ref-win-x86_64-1.1-natives.jar Benchmark_lib/netlib-native_ref-win-i686-1.1-natives.jar Benchmark_lib/netlib-native_ref-linux-armhf-1.1-natives.jar Benchmark_lib/netlib-native_system-osx-x86_64-1.1-natives.jar Benchmark_lib/native_system-java-1.1.jar Benchmark_lib/netlib-native_system-linux-x86_64-1.1-natives.jar Benchmark_lib/netlib-native_system-linux-i686-1.1-natives.jar Benchmark_lib/netlib-native_system-linux-armhf-1.1-natives.jar Benchmark_lib/netlib-native_system-win-x86_64-1.1-natives.jar Benchmark_lib/netlib-native_system-win-i686-1.1-natives.jar Benchmark_lib/arpack_combined_all-0.1.jar Benchmark_lib/netlib-java-1.1.jar Benchmark_lib/core-1.1.jar Benchmark_lib/commons-lang3-3.4.jar Benchmark_lib/commons-collections4-4.1.jar Benchmark_lib/commons-io-2.5.jar Benchmark_lib/commons-fileupload-1.3.3.jar Benchmark_lib/guava-18.0.jar Benchmark_lib/slf4j-log4j12-1.7.13.jar Benchmark_lib/slf4j-api-1.7.13.jar Benchmark_lib/log4j-1.2.17.jar Benchmark_lib/jackson-databind-2.9.0.pr4.jar Benchmark_lib/jackson-annotations-2.9.0.pr4.jar Benchmark_lib/jackson-core-2.9.0.pr4.jar" />
+			</manifest>
+			<fileset dir="${dir.buildfile}/target/classes" />
+		</jar>
+		<copy file="${dir.buildfile}/lib/Catalano.Image.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/Catalano.Math.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/Catalano.Statistics.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/HTNSearch.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/JAICore.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/JASE.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-core/1.1.1/gs-core-1.1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/junit/junit/4.3.1/junit-4.3.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/pherd/1.0/pherd-1.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/mbox2/1.0/mbox2-1.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-ui/1.3/gs-ui-1.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-algo/1.3/gs-algo-1.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/jfree/jcommon/1.0.17/jcommon-1.0.17.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/lowagie/itext/2.1.5/itext-2.1.5.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/weka-dev/3.9.1/weka-dev-3.9.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b/2015.03.26/java-cup-11b-2015.03.26.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b-runtime/2015.03.26/java-cup-11b-runtime-2015.03.26.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/bounce/0.18/bounce-0.18.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/googlecode/matrix-toolkits-java/mtj/1.0.4/mtj-1.0.4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/jniloader/1.1/jniloader-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/googlecode/netlib-java/netlib-java/1.1/netlib-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/core/1.1/core-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/slf4j/slf4j-log4j12/1.7.13/slf4j-log4j12-1.7.13.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.0.pr4/jackson-databind-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0.pr4/jackson-annotations-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.0.pr4/jackson-core-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+	</target>
+
+	<target name="createHTNStrategyJar">
+		<jar destfile="${dir.jarfile}/strategies/htn/strategy.jar">
+			<manifest>
+				<attribute name="Main-Class" value="de.upb.crc901.proseco.prototype.imageclassification.strategy.htn.HTNCompositionStrategyRunner" />
+				<attribute name="Class-Path" value=". strategy_lib/Catalano.Image.jar strategy_lib/Catalano.Math.jar strategy_lib/Catalano.Statistics.jar strategy_lib/HTNSearch.jar strategy_lib/JAICore.jar strategy_lib/JASE.jar strategy_lib/gs-core-1.1.1.jar strategy_lib/junit-4.3.1.jar strategy_lib/pherd-1.0.jar strategy_lib/mbox2-1.0.jar strategy_lib/gs-ui-1.3.jar strategy_lib/gs-algo-1.3.jar strategy_lib/commons-math-2.1.jar strategy_lib/commons-math3-3.4.1.jar strategy_lib/jfreechart-1.0.14.jar strategy_lib/jcommon-1.0.17.jar strategy_lib/xml-apis-1.3.04.jar strategy_lib/itext-2.1.5.jar strategy_lib/bcmail-jdk14-138.jar strategy_lib/bcprov-jdk14-138.jar strategy_lib/scala-library-2.10.1.jar strategy_lib/weka-dev-3.9.1.jar strategy_lib/java-cup-11b-2015.03.26.jar strategy_lib/java-cup-11b-runtime-2015.03.26.jar strategy_lib/bounce-0.18.jar strategy_lib/mtj-1.0.4.jar strategy_lib/netlib-native_ref-osx-x86_64-1.1-natives.jar strategy_lib/native_ref-java-1.1.jar strategy_lib/jniloader-1.1.jar strategy_lib/netlib-native_ref-linux-x86_64-1.1-natives.jar strategy_lib/netlib-native_ref-linux-i686-1.1-natives.jar strategy_lib/netlib-native_ref-win-x86_64-1.1-natives.jar strategy_lib/netlib-native_ref-win-i686-1.1-natives.jar strategy_lib/netlib-native_ref-linux-armhf-1.1-natives.jar strategy_lib/netlib-native_system-osx-x86_64-1.1-natives.jar strategy_lib/native_system-java-1.1.jar strategy_lib/netlib-native_system-linux-x86_64-1.1-natives.jar strategy_lib/netlib-native_system-linux-i686-1.1-natives.jar strategy_lib/netlib-native_system-linux-armhf-1.1-natives.jar strategy_lib/netlib-native_system-win-x86_64-1.1-natives.jar strategy_lib/netlib-native_system-win-i686-1.1-natives.jar strategy_lib/arpack_combined_all-0.1.jar strategy_lib/netlib-java-1.1.jar strategy_lib/core-1.1.jar strategy_lib/commons-lang3-3.4.jar strategy_lib/commons-collections4-4.1.jar strategy_lib/commons-io-2.5.jar strategy_lib/commons-fileupload-1.3.3.jar strategy_lib/guava-18.0.jar strategy_lib/slf4j-log4j12-1.7.13.jar strategy_lib/slf4j-api-1.7.13.jar strategy_lib/log4j-1.2.17.jar strategy_lib/jackson-databind-2.9.0.pr4.jar strategy_lib/jackson-annotations-2.9.0.pr4.jar strategy_lib/jackson-core-2.9.0.pr4.jar" />
+			</manifest>
+			<fileset dir="${dir.buildfile}/target/classes" />
+		</jar>
+		<copy file="${dir.buildfile}/lib/Catalano.Image.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/Catalano.Math.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/Catalano.Statistics.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/HTNSearch.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/JAICore.jar" todir="${dir.jarlibs}" />
+		<copy file="${dir.buildfile}/lib/JASE.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-core/1.1.1/gs-core-1.1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/junit/junit/4.3.1/junit-4.3.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/pherd/1.0/pherd-1.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/mbox2/1.0/mbox2-1.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-ui/1.3/gs-ui-1.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/graphstream/gs-algo/1.3/gs-algo-1.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/jfree/jcommon/1.0.17/jcommon-1.0.17.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/lowagie/itext/2.1.5/itext-2.1.5.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/weka-dev/3.9.1/weka-dev-3.9.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b/2015.03.26/java-cup-11b-2015.03.26.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/java-cup-11b-runtime/2015.03.26/java-cup-11b-runtime-2015.03.26.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/nz/ac/waikato/cms/weka/thirdparty/bounce/0.18/bounce-0.18.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/googlecode/matrix-toolkits-java/mtj/1.0.4/mtj-1.0.4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/jniloader/1.1/jniloader-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1-natives.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/googlecode/netlib-java/netlib-java/1.1/netlib-java-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/github/fommil/netlib/core/1.1/core-1.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/slf4j/slf4j-log4j12/1.7.13/slf4j-log4j12-1.7.13.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.0.pr4/jackson-databind-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0.pr4/jackson-annotations-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+		<copy file="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.0.pr4/jackson-core-2.9.0.pr4.jar" todir="${dir.jarlibs}" />
+	</target>
+
+	<target name="all" depends="createGroundingRoutineJar, createBenchmarkTaskOfferJar, createBenchmarkJar, createHTNStrategyJar">
+	</target>
+
+</project>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="all" name="Create Runnable Jar for Project prototypebasedcomposition with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="${dir.buildfile}/prototypes/imageclassification"/>
+    <property name="dir.jarlibs" value="${dir.buildfile}/prototypes/imageclassification/libs"/>
+	
+    <target name="createGroundingRoutineJar">
+        <jar destfile="${dir.jarfile}/GroundingRoutine.jar">
+            <manifest>
+                <attribute name="Main-Class" value="de.upb.crc901.proseco.prototype.imageclassification.GroundingRoutine"/>
+                <attribute name="Class-Path" value=". libs/weka.jar libs/commons-io-2.5.jar libs/Catalano.Image.jar libs/Catalano.Math.jar libs/Catalano.Statistics.jar libs/slf4j-api-1.7.5.jar libs/slf4j-log4j12-1.7.5.jar libs/crcutil.jar"/>
+            </manifest>
+            <fileset dir="${dir.buildfile}/bin"/>
+        </jar>
+    </target>
+	
+    <target name="createBenchmarkTaskOfferJar">
+        <jar destfile="${dir.jarfile}/benchmarks/BenchmarkTaskOffer.jar">
+            <manifest>
+                <attribute name="Main-Class" value="de.upb.crc901.proseco.prototype.imageclassification.benchmark.BenchmarkRcv"/>
+                <attribute name="Class-Path" value=". ../libs/weka.jar ../libs/commons-io-2.5.jar ../libs/Catalano.Image.jar ../libs/Catalano.Math.jar ../libs/Catalano.Statistics.jar ../libs/slf4j-api-1.7.5.jar ../libs/slf4j-log4j12-1.7.5.jar ../libs/crcutil.jar"/>
+            </manifest>
+            <fileset dir="${dir.buildfile}/bin"/>
+        </jar>
+    </target>
+
+    <target name="createBenchmarkJar">
+        <jar destfile="${dir.jarfile}/benchmarks/Benchmark.jar">
+            <manifest>
+                <attribute name="Main-Class" value="de.upb.crc901.proseco.prototype.imageclassification.benchmark.Benchmark"/>
+                <attribute name="Class-Path" value=". ../libs/weka.jar ../libs/commons-io-2.5.jar ../libs/commons-lang3-3.4.jar ../libs/Catalano.Image.jar ../libs/Catalano.Math.jar ../libs/Catalano.Statistics.jar ../libs/slf4j-api-1.7.5.jar ../libs/slf4j-log4j12-1.7.5.jar ../libs/crcutil.jar"/>
+            </manifest>
+            <fileset dir="${dir.buildfile}/bin"/>
+        </jar>
+    </target>
+
+    <target name="createHTNStrategyJar">
+        <jar destfile="${dir.jarfile}/strategies/htn/strategy.jar">
+            <manifest>
+                <attribute name="Main-Class" value="de.upb.crc901.proseco.prototype.imageclassification.strategy.htn.HTNCompositionStrategyRunner"/>
+                <attribute name="Class-Path" value=". ../../libs/weka.jar ../../libs/commons-io-2.5.jar ../../libs/Catalano.Image.jar ../../libs/Catalano.Math.jar ../../libs/Catalano.Statistics.jar ../../libs/slf4j-api-1.7.5.jar ../../libs/slf4j-log4j12-1.7.5.jar ../../libs/slf4j-api-1.7.5.jar ../../libs/pddl4j.jar ../../libs/guava-18.0.jar ../../libs/weka.jar ../../libs/gs-core-1.3.jar ../../libs/gs-ui-1.3.jar ../../libs/junit.jar ../../libs/org.hamcrest.core_1.3.0.v201303031735.jar ../../libs/commons-lang3-3.4.jar ../../libs/slf4j-api-1.7.13.jar ../../libs/guava-18.0.jar ../../libs/weka.jar ../../libs/ensemblesOfNestedDichotomies-1.0.5.jar ../../libs/slf4j-api-1.7.5.jar ../../libs/multiBoostAB.jar ../../libs/gaussianProcesses.jar ../../libs/libsvm.jar ../../libs/LibSVM.jar ../../libs/mtj-1.0.1.jar ../../libs/log4j-1.2.17.jar ../../libs/slf4j-log4j12-1.7.5.jar"/>
+            </manifest>
+            <fileset dir="${dir.buildfile}/bin"/>
+        </jar>
+    </target>
+	
+	<target name="all" depends="createGroundingRoutineJar, createBenchmarkTaskOfferJar, createBenchmarkJar, createHTNStrategyJar">
+	</target>
+	
+</project>
